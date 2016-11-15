@@ -1,0 +1,308 @@
+﻿Version=6.3
+NumberOfModules=2
+Module1=Ads
+Module2=RunAds
+Build1=Default,com.htetznaing.mmallsimregister
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~	android:hardwareAccelerated="true" ~\n~    android:anyDensity="true"/>)~\n~	SetManifestAttribute("android:installLocation", "auto")~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetActivityAttribute(main, android:theme, @android:style/Theme.Holo)~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AdMob~\n~AddApplicationText(~\n~<meta-data android:name="com.google.android.gms.version"~\n~  android:value="@integer/google_play_services_version"/>~\n~<activity android:name="com.google.android.gms.ads.AdActivity"~\n~  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>~\n~~\n~)~\n~'End of AdMob
+IconFile=
+NumberOfFiles=2
+File1=icon.png
+File2=share.png
+NumberOfLibraries=7
+Library1=core
+Library2=phone
+Library3=xmllayoutbuilder
+Library4=stringutils
+Library5=admob
+Library6=mwadmobinterstitial2
+Library7=clipboard
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Myanmar All Sim Register!
+	#VersionCode: 3
+	#VersionName: 1.0
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+	#AdditionalRes: C:\Android\sdk\extras\google\google-play-services\libproject\google-play-services_lib\res, com.google.android.gms
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: True
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+Dim Theme_Value As Int
+Dim t,t1 As Timer
+End Sub
+
+Sub Globals
+	Dim copy As BClipboard
+	Dim bTelenor, bMPT, bOoredoo As Button
+Dim res As XmlLayoutBuilder
+Dim tbg As ColorDrawable
+Dim mbg As ColorDrawable
+Dim obg As ColorDrawable
+Dim lblTitle,lblFooter As Label
+Dim su As StringUtils 
+Dim scr As Phone
+Dim AdView1 As AdView
+Dim AdView2 As mwAdmobInterstitial
+
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	ToastMessageShow("Long Click any Button for Help!",True)
+	scr.SetScreenOrientation(1)
+	Activity.Title = "All Sim Registration!"
+		
+	StartService(RunAds)
+	
+	AdView1.Initialize("AdView1","ca-app-pub-4173348573252986/7394508954")
+	AdView1.LoadAd
+	
+	AdView2.Initialize("AdView2","ca-app-pub-4173348573252986/8871242155")
+	AdView2.LoadAd
+	
+		Dim imvLogo As ImageView 
+	imvLogo.Initialize ("")
+	imvLogo.Bitmap = LoadBitmap(File.DirAssets , "icon.png")
+	imvLogo.Gravity = Gravity.FILL 
+	Activity.AddView ( imvLogo , 50%x - 50dip  , 20dip ,  100dip  ,  100dip )
+	
+	Dim divBar,divBar1 As Panel 
+	divBar.Initialize ("")
+	divBar.Color = Colors.LightGray 
+	Activity.AddView (divBar , 18dip , imvLogo.Height + 25dip , 100%x - 36dip, 2dip)
+	
+	lblTitle.Initialize ("")
+	lblTitle.Text = "Myanmar All Sim Register!"
+	lblTitle.TextColor = Colors.Green
+	lblTitle.TextSize = 20
+	lblTitle.Gravity = Gravity.CENTER 
+	Activity.AddView (lblTitle, 10dip , (divBar.Top+divBar.Height)+1%y , 100%x - 20dip , 50dip )
+	lblTitle.Height = su.MeasureMultilineTextHeight (lblTitle, lblTitle.Text )
+	
+		lblFooter.Initialize ("lblFooter")
+	lblFooter.Text = "Developed By Khun Htetz Naing"
+	lblFooter.TextColor = Colors.White
+	lblFooter.TextSize = 12
+	lblFooter.Gravity = Gravity.CENTER 
+	
+	divBar1.Initialize ("")
+	divBar1.Color = Colors.LightGray 
+	Activity.AddView (divBar1 , 18dip , (lblTitle.Height +lblTitle.Top)+1%y , 100%x - 36dip, 2dip)
+	
+	tbg.Initialize(Colors.RGB(11,149,211),15)
+	mbg.Initialize(Colors.RGB(254,201,1),15)
+	obg.Initialize(Colors.RGB(237,27,36),15)
+	
+	bTelenor.Initialize("bTelenor")
+	bTelenor.Text = "Telenor"
+	bTelenor.Background = tbg
+	
+	bMPT.Initialize("bMPT")
+	bMPT.Text = "MPT"
+	bMPT.Background = mbg
+	
+	bOoredoo.Initialize("bOoredoo")
+	bOoredoo.Text = "Ooredoo"
+	bOoredoo.Background = obg
+	
+	Activity.AddView(bTelenor,15%x,40%y,70%x,10%y)
+	Activity.AddView(bMPT,15%x,(bTelenor.Top+bTelenor.Height)+3%y,70%x,10%y)
+	Activity.AddView(bOoredoo,15%x,(bMPT.Top+bMPT.Height)+3%y,70%x,10%y)
+	Activity.AddView(AdView1, 0%x,(bOoredoo.Top+bOoredoo.Height)+5%y, 100%x, 10%y)
+	Activity.AddView (lblFooter , 10dip,95%y, 100%x - 20dip ,5%y )
+
+Activity.AddMenuItem("Holo","btnHolo")
+	Activity.AddMenuItem("Holo Light","btnHoloLight")
+	Activity.AddMenuItem("Holo Light Dark","btnHoloLightDark")
+	Activity.AddMenuItem("Old Android","btnOld")
+	Activity.AddMenuItem("Material Light Dark","btnMaterialLightDark")
+	Activity.AddMenuItem("Material Light","btnMaterialLight")
+	Activity.AddMenuItem("Material","btnMaterial")
+	Activity.AddMenuItem("Transparent","btnTransparent")
+	Activity.AddMenuItem("Transparent No Title Bar","btnTransparentNoTitleBar")
+	Activity.AddMenuItem3("Share App","share",LoadBitmap(File.DirAssets,"share.png"),True)
+	Activity.AddMenuItem("How to Use.?","help")
+	
+	t.Initialize("t",15000)
+	t.Enabled = True
+	t1.Initialize("t1",100)
+	t.Enabled = False
+End Sub
+
+Sub share_Click
+Dim ShareIt As Intent
+copy.clrText
+copy.setText("#Myanmar_All_Sim_Register App! Registration you sim Free with this app. You can register all Myanmar sim Card, MPT, Telenor, Ooredoo. Very simple useful App. Download Free at Google Play Store: https://play.google.com/store/apps/details?id=com.htetznaing.mmallsimregister")
+    ShareIt.Initialize (ShareIt.ACTION_SEND,"")
+    ShareIt.SetType ("text/plain")
+    ShareIt.PutExtra ("android.intent.extra.TEXT",copy.getText)
+    ShareIt.PutExtra ("android.intent.extra.SUBJECT","Get Free!!")
+    ShareIt.WrapAsIntentChooser("Share App Via...")
+StartActivity (ShareIt)
+End Sub
+
+Sub help_Click
+	t1.Enabled = True
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("http://ht3tzn4ing.blogspot.com/2016/11/MyanmarAllSimRegister.html"))
+End Sub
+Sub t_tick
+	
+	If AdView2.Status=AdView2.Status_AdReadyToShow Then
+	AdView2.Show
+	End If
+	
+	If AdView2.Status=AdView2.Status_Dismissed Then
+	AdView2.LoadAd
+	End If
+End Sub
+
+Sub bTelenor_Click
+	t1.Enabled = True
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("https://ecaf.telenor.com.mm/"))
+End Sub
+
+Sub bTelenor_LongClick
+	t1.Enabled = True
+		Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("http://ht3tzn4ing.blogspot.com/2016/11/MyanmarAllSimRegister.html"))
+End Sub
+
+Sub bMPT_Click
+	t1.Enabled = True
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("https://care.mpt.com.mm/"))
+End Sub
+ Sub bMPT_LongClick
+ 	t1.Enabled = True
+ 		Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("http://ht3tzn4ing.blogspot.com/2016/11/MyanmarAllSimRegister.html"))
+End Sub
+
+Sub bOoredoo_CLick
+	t1.Enabled = True
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("http://www.ooredoo.com.mm/en/Personal/SelfCare/SIM-Registration.aspx"))
+End Sub
+
+Sub bOoredoo_LongClick
+	t1.Enabled = True
+		Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("http://ht3tzn4ing.blogspot.com/2016/11/MyanmarAllSimRegister.html"))
+End Sub
+
+Sub btnHolo_Click
+	t1.Enabled = True
+	SetTheme(res.GetResourceId("style", "android:style/Theme.Holo"))
+End Sub
+
+Sub btnHoloLight_Click
+	t1.Enabled = True
+	SetTheme(res.GetResourceId("style", "android:style/Theme.Holo.Light"))
+End Sub
+
+Sub btnHoloLightDark_Click
+	t1.Enabled = True
+	SetTheme(res.GetResourceId("style", "android:style/Theme.Holo.Light.DarkActionBar"))
+End Sub
+
+Sub btnOld_Click
+	t1.Enabled = True
+	SetTheme(16973829)
+End Sub
+
+Sub btnMaterialLightDark_Click
+	t1.Enabled = True
+	SetTheme(res.GetResourceId("style", "android:style/Theme.Material.Light.DarkActionBar"))
+End Sub
+
+Sub btnMaterialLight_Click
+	t1.Enabled = True
+	SetTheme(res.GetResourceId("style", "android:style/Theme.Material.Light"))
+End Sub
+
+Sub btnMaterial_Click
+	t1.Enabled = True
+	SetTheme(res.GetResourceId("style", "android:style/Theme.Material"))
+End Sub
+
+Sub btnTransparent_Click
+	t1.Enabled = True
+	SetTheme(res.GetResourceId("style", "android:style/Theme.Translucent"))
+End Sub
+
+Sub btnTransparentNoTitleBar_Click
+	t1.Enabled = True
+	SetTheme(res.GetResourceId("style", "android:style/Theme.Translucent.NoTitleBar"))
+End Sub
+Private Sub SetTheme (Theme As Int)
+	If Theme = 0 Then
+		ToastMessageShow("Theme not available.", False)
+		Return
+	End If
+	If Theme = Theme_Value Then Return
+	Theme_Value = Theme
+	Activity.Finish
+	StartActivity(Me)				
+End Sub
+
+
+#if java
+public void _onCreate() {
+	if (_theme_value != 0)
+		setTheme(_theme_value);
+}
+#end if
+
+Sub Activity_Pause (UserClosed As Boolean)
+   AdView1.Pause
+End Sub
+
+Sub Activity_Resume
+   AdView1.Resume
+End Sub
+
+Sub Ad_FailedToReceiveAd (ErrorCode As String)
+    Log("failed: " & ErrorCode)
+End Sub
+
+Sub Ad_ReceiveAd
+    Log("received")
+End Sub
+
+Sub Ad_AdScreenDismissed
+   Log("screen dismissed")
+End Sub
+
+Sub mwadi_AdFailedToLoad (ErrorCode As String)
+    Log("failed to load ad")
+End Sub
+
+Sub mwadi_AdLoaded
+    Log("ad loaded")
+End Sub
+
+Sub lblFooter_Click
+	t1.Enabled = True
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("https://www.facebook.com/Khun.Htetz.Naing"))
+End Sub
+
+Sub t1_tick
+	If AdView2.Status=AdView2.Status_AdReadyToShow Then
+	AdView2.Show
+	End If
+	
+	If AdView2.Status=AdView2.Status_Dismissed Then
+	AdView2.LoadAd
+	End If
+	t1.Enabled = False
+End Sub
