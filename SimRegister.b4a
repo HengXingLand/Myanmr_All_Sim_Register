@@ -1,7 +1,7 @@
 ﻿Version=6.3
 NumberOfModules=3
-Module1=Ads
-Module2=RunAds
+Module1=RunAds
+Module2=Ads
 Module3=lollipop
 Build1=Default,com.htetznaing.mmallsimregistration
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~	android:hardwareAccelerated="true" ~\n~    android:anyDensity="true"/>)~\n~	SetManifestAttribute("android:installLocation", "auto")~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AdMob~\n~AddApplicationText(~\n~<meta-data android:name="com.google.android.gms.version"~\n~  android:value="@integer/google_play_services_version"/>~\n~<activity android:name="com.google.android.gms.ads.AdActivity"~\n~  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>~\n~~\n~)~\n~'End of AdMob~\n~
@@ -28,8 +28,8 @@ Library9=floatingactionbutton
 @EndOfDesignText@
 #Region  Project Attributes 
 	#ApplicationLabel: Myanmar All Sim Register!
-	#VersionCode: 4
-	#VersionName: 1.2
+	#VersionCode: 5
+	#VersionName: 1.3
 	'SupportedOrientations possible values: unspecified, landscape or portrait.
 	#SupportedOrientations: unspecified
 	#CanInstallToExternalStorage: False
@@ -81,20 +81,6 @@ Sub Activity_Create(FirstTime As Boolean)
 	fb1.HideOffset = 100%y - fb.Top
 	fb1.Hide(False)
 	fb1.Show(True)
-	
-	If FirstTime Then
-	wv.Initialize("wv")
-	wv.LoadUrl("file:///android_asset/sp.html")
-	wv.Visible=True
-	wv.ZoomEnabled = False
-	
-	bsbg.Initialize(Colors.Blue,15)
-	bstart.Initialize("bstart")
-	bstart.Text = ">> Start >>"
-	bstart.Background = bsbg
-	fb.Hide(True)
-	fb1.Hide(True)
-	End If
 	
 	scr.SetScreenOrientation(1)
 	Activity.Title = "All Sim Registration!"
@@ -177,8 +163,26 @@ Activity.AddMenuItem("Change Theme","ct")
 	t1.Initialize("t1",100)
 	t.Enabled = False
 	
+		If FirstTime Then
+	wv.Initialize("wv")
+	wv.LoadUrl("file:///android_asset/sp.html")
+	wv.Visible=True
+	wv.ZoomEnabled = False
+	
+	bsbg.Initialize(Colors.Blue,15)
+	bstart.Initialize("bstart")
+	bstart.Text = ">> Start >>"
+	bstart.Background = bsbg
+	fb.Hide(True)
+	fb1.Hide(True)
 	Activity.AddView(wv,0%x,0%y,100%x,100%y)
 	Activity.AddView(bstart,60%x,87%y,35%x,8%y)
+	
+	bTelenor.Visible = False
+	bMPT.Visible = False
+	bOoredoo.Visible = False
+	bMEC.Visible = False
+	End If
 End Sub
  
  Sub bstart_Click
@@ -188,6 +192,11 @@ End Sub
 	fb1.Hide(False)
 	fb.Show(True)
 	fb1.Show(True)
+	
+	bTelenor.Visible = True
+	bMPT.Visible = True
+	bOoredoo.Visible = True
+	bMEC.Visible = True
 	End Sub
 
  Sub rad_Click
