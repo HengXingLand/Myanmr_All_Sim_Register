@@ -5,24 +5,20 @@ B4A=true
 @EndOfDesignText@
 #Region  Activity Attributes 
 	#FullScreen: True
-	#IncludeTitle: True
+	#IncludeTitle: false
 #End Region
 
 Sub Process_Globals
 	Dim t As Timer
-	Dim Theme_Value As Int
 End Sub
 
 Sub Globals
 	Dim AdView2 As mwAdmobInterstitial
-	Dim res As XmlLayoutBuilder
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
 	
-	SetTheme(res.GetResourceId("style", "android:style/Theme.Translucent.NoTitleBar"))
-	
-	t.Initialize("t",10)
+	t.Initialize("t",500)
 	t.Enabled = True
 	
 	AdView2.Initialize("AdView2","ca-app-pub-4173348573252986/8871242155")
@@ -64,22 +60,3 @@ If AdView2.Status=AdView2.Status_AdReadyToShow Then
 	End If
 	
 End Sub
-
-Private Sub SetTheme (Theme As Int)
-	If Theme = 0 Then
-		ToastMessageShow("Theme not available.", False)
-		Return
-	End If
-	If Theme = Theme_Value Then Return
-	Theme_Value = Theme
-	Activity.Finish
-	StartActivity(Me)				
-End Sub
-
-
-#if java
-public void _onCreate() {
-	if (_theme_value != 0)
-		setTheme(_theme_value);
-}
-#end if

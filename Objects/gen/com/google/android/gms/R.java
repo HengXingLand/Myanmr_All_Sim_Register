@@ -21,7 +21,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adSize=0x7f010000;
+        public static final int adSize=0x7f010005;
         /** 
     A comma-separated list of the supported ad sizes. The sizes must be one of
     BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
@@ -34,7 +34,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adSizes=0x7f010001;
+        public static final int adSizes=0x7f010006;
         /**  The ad unit ID. 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -43,7 +43,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adUnitId=0x7f010002;
+        public static final int adUnitId=0x7f010007;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -51,7 +51,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ambientEnabled=0x7f010019;
+        public static final int ambientEnabled=0x7f01001e;
         /**  Theme to be used for the Wallet selector 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -63,7 +63,7 @@ containing a value of this type.
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int appTheme=0x7f01001a;
+        public static final int appTheme=0x7f01001f;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be one of the following constant values.</p>
@@ -77,7 +77,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int buttonSize=0x7f010003;
+        public static final int buttonSize=0x7f010008;
         /**  The appearance of the buy button 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -96,7 +96,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonAppearance=0x7f010021;
+        public static final int buyButtonAppearance=0x7f010026;
         /**  Height of the buy button. This includes an 8dp padding (4dp on each side) used for
              pressed and focused states of the button. The value can be a specific height, e.g.
              "48dp", or special values "match_parent" and "wrap_content". 
@@ -118,7 +118,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonHeight=0x7f01001e;
+        public static final int buyButtonHeight=0x7f010023;
         /**  The text on the buy button 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -135,7 +135,7 @@ containing a value of this type.
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonText=0x7f010020;
+        public static final int buyButtonText=0x7f010025;
         /**  Width of the buy button. This includes an 8dp padding (4dp on each side) used for
              pressed and focused states of the button. The value can be a specific width, e.g.
              "300dp", or special values "match_parent" and "wrap_content". 
@@ -157,7 +157,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonWidth=0x7f01001f;
+        public static final int buyButtonWidth=0x7f010024;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -165,7 +165,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraBearing=0x7f01000a;
+        public static final int cameraBearing=0x7f01000f;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -173,7 +173,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLat=0x7f01000b;
+        public static final int cameraTargetLat=0x7f010010;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -181,7 +181,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLng=0x7f01000c;
+        public static final int cameraTargetLng=0x7f010011;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -189,7 +189,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTilt=0x7f01000d;
+        public static final int cameraTilt=0x7f010012;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -197,7 +197,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraZoom=0x7f01000e;
+        public static final int cameraZoom=0x7f010013;
         /** 
         Whether or not this view should have a circular clip applied
         
@@ -208,7 +208,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circleCrop=0x7f010008;
+        public static final int circleCrop=0x7f01000d;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be one of the following constant values.</p>
@@ -222,7 +222,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>auto</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int colorScheme=0x7f010004;
+        public static final int colorScheme=0x7f010009;
         /**  Google Wallet environment to use 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -236,7 +236,53 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int environment=0x7f01001b;
+        public static final int environment=0x7f010020;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fab_colorNormal=0x7f010001;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fab_colorPressed=0x7f010000;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fab_colorRipple=0x7f010002;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fab_shadow=0x7f010003;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>mini</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int fab_type=0x7f010004;
         /**  Fragment mode 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -248,12 +294,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int fragmentMode=0x7f01001d;
+        public static final int fragmentMode=0x7f010022;
         /**  A style resource specifing attributes to customize the look and feel of WalletFragment 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int fragmentStyle=0x7f01001c;
+        public static final int fragmentStyle=0x7f010021;
         /** 
         The fixed aspect ratio to use in aspect ratio adjustments.
         
@@ -264,7 +310,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int imageAspectRatio=0x7f010007;
+        public static final int imageAspectRatio=0x7f01000c;
         /** 
         What kind of aspect ratio adjustment to do.  It must be one of "none", "adjust_width",
         or "adjust_height".
@@ -280,7 +326,7 @@ containing a value of this type.
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int imageAspectRatioAdjust=0x7f010006;
+        public static final int imageAspectRatioAdjust=0x7f01000b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -288,7 +334,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int liteMode=0x7f01000f;
+        public static final int liteMode=0x7f010014;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -302,31 +348,31 @@ containing a value of this type.
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int mapType=0x7f010009;
+        public static final int mapType=0x7f01000e;
         /**  Masked wallet details background 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int maskedWalletDetailsBackground=0x7f010024;
+        public static final int maskedWalletDetailsBackground=0x7f010029;
         /**  "Change" button background in masked wallet details view 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int maskedWalletDetailsButtonBackground=0x7f010026;
+        public static final int maskedWalletDetailsButtonBackground=0x7f01002b;
         /**  TextAppearance for the "Change" button in masked wallet details view 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsButtonTextAppearance=0x7f010025;
+        public static final int maskedWalletDetailsButtonTextAppearance=0x7f01002a;
         /**  TextAppearance for headers describing masked wallet details 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f010023;
+        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f010028;
         /**  Type of the wallet logo image in masked wallet details view 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -341,7 +387,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int maskedWalletDetailsLogoImageType=0x7f010028;
+        public static final int maskedWalletDetailsLogoImageType=0x7f01002d;
         /**  Color of the Google Wallet logo text in masked wallet details view 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -351,17 +397,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maskedWalletDetailsLogoTextColor=0x7f010027;
+        public static final int maskedWalletDetailsLogoTextColor=0x7f01002c;
         /**  TextAppearance for masked wallet details 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsTextAppearance=0x7f010022;
+        public static final int maskedWalletDetailsTextAppearance=0x7f010027;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
-        public static final int scopeUris=0x7f010005;
+        public static final int scopeUris=0x7f01000a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -369,7 +415,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiCompass=0x7f010010;
+        public static final int uiCompass=0x7f010015;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -377,7 +423,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiMapToolbar=0x7f010018;
+        public static final int uiMapToolbar=0x7f01001d;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -385,7 +431,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiRotateGestures=0x7f010011;
+        public static final int uiRotateGestures=0x7f010016;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -393,7 +439,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiScrollGestures=0x7f010012;
+        public static final int uiScrollGestures=0x7f010017;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -401,7 +447,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiTiltGestures=0x7f010013;
+        public static final int uiTiltGestures=0x7f010018;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -409,7 +455,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomControls=0x7f010014;
+        public static final int uiZoomControls=0x7f010019;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -417,7 +463,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomGestures=0x7f010015;
+        public static final int uiZoomGestures=0x7f01001a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -425,7 +471,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int useViewLifecycle=0x7f010016;
+        public static final int useViewLifecycle=0x7f01001b;
         /**  Defines the set of transition to be used between activities 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -437,7 +483,7 @@ containing a value of this type.
 <tr><td><code>none</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int windowTransitionStyle=0x7f010029;
+        public static final int windowTransitionStyle=0x7f01002e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -445,313 +491,348 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int zOrderOnTop=0x7f010017;
+        public static final int zOrderOnTop=0x7f01001c;
     }
     public static final class color {
-        public static final int common_action_bar_splitter=0x7f060008;
-        public static final int common_google_signin_btn_text_dark=0x7f06001e;
+        public static final int common_action_bar_splitter=0x7f04000a;
+        public static final int common_google_signin_btn_text_dark=0x7f040020;
         /**  Google Sign-in Button Colors 
          */
-        public static final int common_google_signin_btn_text_dark_default=0x7f060009;
-        public static final int common_google_signin_btn_text_dark_disabled=0x7f06000b;
-        public static final int common_google_signin_btn_text_dark_focused=0x7f06000c;
-        public static final int common_google_signin_btn_text_dark_pressed=0x7f06000a;
-        public static final int common_google_signin_btn_text_light=0x7f06001f;
-        public static final int common_google_signin_btn_text_light_default=0x7f06000d;
-        public static final int common_google_signin_btn_text_light_disabled=0x7f06000f;
-        public static final int common_google_signin_btn_text_light_focused=0x7f060010;
-        public static final int common_google_signin_btn_text_light_pressed=0x7f06000e;
-        public static final int common_plus_signin_btn_text_dark=0x7f060020;
+        public static final int common_google_signin_btn_text_dark_default=0x7f04000b;
+        public static final int common_google_signin_btn_text_dark_disabled=0x7f04000d;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f04000e;
+        public static final int common_google_signin_btn_text_dark_pressed=0x7f04000c;
+        public static final int common_google_signin_btn_text_light=0x7f040021;
+        public static final int common_google_signin_btn_text_light_default=0x7f04000f;
+        public static final int common_google_signin_btn_text_light_disabled=0x7f040011;
+        public static final int common_google_signin_btn_text_light_focused=0x7f040012;
+        public static final int common_google_signin_btn_text_light_pressed=0x7f040010;
+        public static final int common_plus_signin_btn_text_dark=0x7f040022;
         /**  Google Plus Sign-in Button Colors 
          */
-        public static final int common_plus_signin_btn_text_dark_default=0x7f060000;
-        public static final int common_plus_signin_btn_text_dark_disabled=0x7f060002;
-        public static final int common_plus_signin_btn_text_dark_focused=0x7f060003;
-        public static final int common_plus_signin_btn_text_dark_pressed=0x7f060001;
-        public static final int common_plus_signin_btn_text_light=0x7f060021;
-        public static final int common_plus_signin_btn_text_light_default=0x7f060004;
-        public static final int common_plus_signin_btn_text_light_disabled=0x7f060006;
-        public static final int common_plus_signin_btn_text_light_focused=0x7f060007;
-        public static final int common_plus_signin_btn_text_light_pressed=0x7f060005;
-        public static final int wallet_bright_foreground_disabled_holo_light=0x7f060016;
+        public static final int common_plus_signin_btn_text_dark_default=0x7f040002;
+        public static final int common_plus_signin_btn_text_dark_disabled=0x7f040004;
+        public static final int common_plus_signin_btn_text_dark_focused=0x7f040005;
+        public static final int common_plus_signin_btn_text_dark_pressed=0x7f040003;
+        public static final int common_plus_signin_btn_text_light=0x7f040023;
+        public static final int common_plus_signin_btn_text_light_default=0x7f040006;
+        public static final int common_plus_signin_btn_text_light_disabled=0x7f040008;
+        public static final int common_plus_signin_btn_text_light_focused=0x7f040009;
+        public static final int common_plus_signin_btn_text_light_pressed=0x7f040007;
+        /**  http://www.google.com/design/spec/style/color.html#color-ui-color-palette 
+         */
+        public static final int material_blue_500=0x7f040000;
+        public static final int material_blue_600=0x7f040001;
+        public static final int wallet_bright_foreground_disabled_holo_light=0x7f040018;
         /** 
          Wallet colors to support consistent Wallet fragment holo dark UI in client application
          regardless of the theme and device type
     
          */
-        public static final int wallet_bright_foreground_holo_dark=0x7f060011;
-        public static final int wallet_bright_foreground_holo_light=0x7f060017;
-        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f060013;
-        public static final int wallet_dim_foreground_holo_dark=0x7f060012;
-        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f060015;
-        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f060014;
-        public static final int wallet_highlighted_text_holo_dark=0x7f06001b;
-        public static final int wallet_highlighted_text_holo_light=0x7f06001a;
-        public static final int wallet_hint_foreground_holo_dark=0x7f060019;
-        public static final int wallet_hint_foreground_holo_light=0x7f060018;
-        public static final int wallet_holo_blue_light=0x7f06001c;
-        public static final int wallet_link_text_light=0x7f06001d;
-        public static final int wallet_primary_text_holo_light=0x7f060022;
-        public static final int wallet_secondary_text_holo_dark=0x7f060023;
+        public static final int wallet_bright_foreground_holo_dark=0x7f040013;
+        public static final int wallet_bright_foreground_holo_light=0x7f040019;
+        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f040015;
+        public static final int wallet_dim_foreground_holo_dark=0x7f040014;
+        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f040017;
+        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f040016;
+        public static final int wallet_highlighted_text_holo_dark=0x7f04001d;
+        public static final int wallet_highlighted_text_holo_light=0x7f04001c;
+        public static final int wallet_hint_foreground_holo_dark=0x7f04001b;
+        public static final int wallet_hint_foreground_holo_light=0x7f04001a;
+        public static final int wallet_holo_blue_light=0x7f04001e;
+        public static final int wallet_link_text_light=0x7f04001f;
+        public static final int wallet_primary_text_holo_light=0x7f040024;
+        public static final int wallet_secondary_text_holo_dark=0x7f040025;
+    }
+    public static final class dimen {
+        public static final int fab_elevation_lollipop=0x7f050004;
+        public static final int fab_scroll_threshold=0x7f050003;
+        public static final int fab_shadow_size=0x7f050002;
+        public static final int fab_size_mini=0x7f050001;
+        public static final int fab_size_normal=0x7f050000;
     }
     public static final class drawable {
-        public static final int cast_ic_notification_0=0x7f020000;
-        public static final int cast_ic_notification_1=0x7f020001;
-        public static final int cast_ic_notification_2=0x7f020002;
-        public static final int cast_ic_notification_connecting=0x7f020003;
-        public static final int cast_ic_notification_on=0x7f020004;
-        public static final int common_full_open_on_phone=0x7f020005;
-        public static final int common_google_signin_btn_icon_dark=0x7f020006;
-        public static final int common_google_signin_btn_icon_dark_disabled=0x7f020007;
-        public static final int common_google_signin_btn_icon_dark_focused=0x7f020008;
-        public static final int common_google_signin_btn_icon_dark_normal=0x7f020009;
-        public static final int common_google_signin_btn_icon_dark_pressed=0x7f02000a;
-        public static final int common_google_signin_btn_icon_light=0x7f02000b;
-        public static final int common_google_signin_btn_icon_light_disabled=0x7f02000c;
-        public static final int common_google_signin_btn_icon_light_focused=0x7f02000d;
-        public static final int common_google_signin_btn_icon_light_normal=0x7f02000e;
-        public static final int common_google_signin_btn_icon_light_pressed=0x7f02000f;
-        public static final int common_google_signin_btn_text_dark=0x7f020010;
-        public static final int common_google_signin_btn_text_dark_disabled=0x7f020011;
-        public static final int common_google_signin_btn_text_dark_focused=0x7f020012;
-        public static final int common_google_signin_btn_text_dark_normal=0x7f020013;
-        public static final int common_google_signin_btn_text_dark_pressed=0x7f020014;
-        public static final int common_google_signin_btn_text_light=0x7f020015;
-        public static final int common_google_signin_btn_text_light_disabled=0x7f020016;
-        public static final int common_google_signin_btn_text_light_focused=0x7f020017;
-        public static final int common_google_signin_btn_text_light_normal=0x7f020018;
-        public static final int common_google_signin_btn_text_light_pressed=0x7f020019;
-        public static final int common_ic_googleplayservices=0x7f02001a;
-        public static final int common_plus_signin_btn_icon_dark=0x7f02001b;
-        public static final int common_plus_signin_btn_icon_dark_disabled=0x7f02001c;
-        public static final int common_plus_signin_btn_icon_dark_focused=0x7f02001d;
-        public static final int common_plus_signin_btn_icon_dark_normal=0x7f02001e;
-        public static final int common_plus_signin_btn_icon_dark_pressed=0x7f02001f;
-        public static final int common_plus_signin_btn_icon_light=0x7f020020;
-        public static final int common_plus_signin_btn_icon_light_disabled=0x7f020021;
-        public static final int common_plus_signin_btn_icon_light_focused=0x7f020022;
-        public static final int common_plus_signin_btn_icon_light_normal=0x7f020023;
-        public static final int common_plus_signin_btn_icon_light_pressed=0x7f020024;
-        public static final int common_plus_signin_btn_text_dark=0x7f020025;
-        public static final int common_plus_signin_btn_text_dark_disabled=0x7f020026;
-        public static final int common_plus_signin_btn_text_dark_focused=0x7f020027;
-        public static final int common_plus_signin_btn_text_dark_normal=0x7f020028;
-        public static final int common_plus_signin_btn_text_dark_pressed=0x7f020029;
-        public static final int common_plus_signin_btn_text_light=0x7f02002a;
-        public static final int common_plus_signin_btn_text_light_disabled=0x7f02002b;
-        public static final int common_plus_signin_btn_text_light_focused=0x7f02002c;
-        public static final int common_plus_signin_btn_text_light_normal=0x7f02002d;
-        public static final int common_plus_signin_btn_text_light_pressed=0x7f02002e;
-        public static final int ic_plusone_medium_off_client=0x7f02002f;
-        public static final int ic_plusone_small_off_client=0x7f020030;
-        public static final int ic_plusone_standard_off_client=0x7f020031;
-        public static final int ic_plusone_tall_off_client=0x7f020032;
-        public static final int icon=0x7f020033;
-        public static final int powered_by_google_dark=0x7f020034;
-        public static final int powered_by_google_light=0x7f020035;
+        public static final int about=0x7f020000;
+        public static final int about1=0x7f020001;
+        public static final int cast_ic_notification_0=0x7f020002;
+        public static final int cast_ic_notification_1=0x7f020003;
+        public static final int cast_ic_notification_2=0x7f020004;
+        public static final int cast_ic_notification_connecting=0x7f020005;
+        public static final int cast_ic_notification_on=0x7f020006;
+        public static final int common_full_open_on_phone=0x7f020007;
+        public static final int common_google_signin_btn_icon_dark=0x7f020008;
+        public static final int common_google_signin_btn_icon_dark_disabled=0x7f020009;
+        public static final int common_google_signin_btn_icon_dark_focused=0x7f02000a;
+        public static final int common_google_signin_btn_icon_dark_normal=0x7f02000b;
+        public static final int common_google_signin_btn_icon_dark_pressed=0x7f02000c;
+        public static final int common_google_signin_btn_icon_light=0x7f02000d;
+        public static final int common_google_signin_btn_icon_light_disabled=0x7f02000e;
+        public static final int common_google_signin_btn_icon_light_focused=0x7f02000f;
+        public static final int common_google_signin_btn_icon_light_normal=0x7f020010;
+        public static final int common_google_signin_btn_icon_light_pressed=0x7f020011;
+        public static final int common_google_signin_btn_text_dark=0x7f020012;
+        public static final int common_google_signin_btn_text_dark_disabled=0x7f020013;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f020014;
+        public static final int common_google_signin_btn_text_dark_normal=0x7f020015;
+        public static final int common_google_signin_btn_text_dark_pressed=0x7f020016;
+        public static final int common_google_signin_btn_text_light=0x7f020017;
+        public static final int common_google_signin_btn_text_light_disabled=0x7f020018;
+        public static final int common_google_signin_btn_text_light_focused=0x7f020019;
+        public static final int common_google_signin_btn_text_light_normal=0x7f02001a;
+        public static final int common_google_signin_btn_text_light_pressed=0x7f02001b;
+        public static final int common_ic_googleplayservices=0x7f02001c;
+        public static final int common_plus_signin_btn_icon_dark=0x7f02001d;
+        public static final int common_plus_signin_btn_icon_dark_disabled=0x7f02001e;
+        public static final int common_plus_signin_btn_icon_dark_focused=0x7f02001f;
+        public static final int common_plus_signin_btn_icon_dark_normal=0x7f020020;
+        public static final int common_plus_signin_btn_icon_dark_pressed=0x7f020021;
+        public static final int common_plus_signin_btn_icon_light=0x7f020022;
+        public static final int common_plus_signin_btn_icon_light_disabled=0x7f020023;
+        public static final int common_plus_signin_btn_icon_light_focused=0x7f020024;
+        public static final int common_plus_signin_btn_icon_light_normal=0x7f020025;
+        public static final int common_plus_signin_btn_icon_light_pressed=0x7f020026;
+        public static final int common_plus_signin_btn_text_dark=0x7f020027;
+        public static final int common_plus_signin_btn_text_dark_disabled=0x7f020028;
+        public static final int common_plus_signin_btn_text_dark_focused=0x7f020029;
+        public static final int common_plus_signin_btn_text_dark_normal=0x7f02002a;
+        public static final int common_plus_signin_btn_text_dark_pressed=0x7f02002b;
+        public static final int common_plus_signin_btn_text_light=0x7f02002c;
+        public static final int common_plus_signin_btn_text_light_disabled=0x7f02002d;
+        public static final int common_plus_signin_btn_text_light_focused=0x7f02002e;
+        public static final int common_plus_signin_btn_text_light_normal=0x7f02002f;
+        public static final int common_plus_signin_btn_text_light_pressed=0x7f020030;
+        public static final int ic_add_white_24dp=0x7f020031;
+        public static final int ic_plusone_medium_off_client=0x7f020032;
+        public static final int ic_plusone_small_off_client=0x7f020033;
+        public static final int ic_plusone_standard_off_client=0x7f020034;
+        public static final int ic_plusone_tall_off_client=0x7f020035;
+        public static final int icon=0x7f020036;
+        public static final int powered_by_google_dark=0x7f020037;
+        public static final int powered_by_google_light=0x7f020038;
+        public static final int shadow=0x7f020039;
+        public static final int shadow_mini=0x7f02003a;
     }
     public static final class id {
-        public static final int adjust_height=0x7f070007;
-        public static final int adjust_width=0x7f070008;
-        public static final int android_pay=0x7f070028;
-        public static final int android_pay_dark=0x7f07001f;
-        public static final int android_pay_light=0x7f070020;
-        public static final int android_pay_light_with_border=0x7f070021;
-        public static final int auto=0x7f070004;
-        public static final int book_now=0x7f070018;
-        public static final int buyButton=0x7f070014;
-        public static final int buy_now=0x7f070019;
-        public static final int buy_with=0x7f07001a;
-        public static final int buy_with_google=0x7f07001b;
-        public static final int cast_notification_id=0x7f070000;
-        public static final int classic=0x7f070022;
-        public static final int dark=0x7f070005;
-        public static final int donate_with=0x7f07001c;
-        public static final int donate_with_google=0x7f07001d;
-        public static final int google_wallet_classic=0x7f070023;
-        public static final int google_wallet_grayscale=0x7f070024;
-        public static final int google_wallet_monochrome=0x7f070025;
-        public static final int grayscale=0x7f070026;
-        public static final int holo_dark=0x7f07000e;
-        public static final int holo_light=0x7f07000f;
-        public static final int hybrid=0x7f07000a;
-        public static final int icon_only=0x7f070001;
-        public static final int light=0x7f070006;
-        public static final int logo_only=0x7f07001e;
-        public static final int match_parent=0x7f070016;
-        public static final int monochrome=0x7f070027;
-        public static final int none=0x7f070009;
-        public static final int normal=0x7f07000b;
-        public static final int production=0x7f070010;
-        public static final int sandbox=0x7f070011;
-        public static final int satellite=0x7f07000c;
-        public static final int selectionDetails=0x7f070015;
-        public static final int slide=0x7f070029;
-        public static final int standard=0x7f070002;
-        public static final int strict_sandbox=0x7f070012;
-        public static final int terrain=0x7f07000d;
-        public static final int test=0x7f070013;
-        public static final int wide=0x7f070003;
-        public static final int wrap_content=0x7f070017;
+        public static final int adjust_height=0x7f080009;
+        public static final int adjust_width=0x7f08000a;
+        public static final int android_pay=0x7f080029;
+        public static final int android_pay_dark=0x7f080020;
+        public static final int android_pay_light=0x7f080021;
+        public static final int android_pay_light_with_border=0x7f080022;
+        public static final int auto=0x7f080006;
+        public static final int book_now=0x7f080019;
+        public static final int buyButton=0x7f080015;
+        public static final int buy_now=0x7f08001a;
+        public static final int buy_with=0x7f08001b;
+        public static final int buy_with_google=0x7f08001c;
+        public static final int cast_notification_id=0x7f080000;
+        public static final int classic=0x7f080023;
+        public static final int dark=0x7f080007;
+        public static final int donate_with=0x7f08001d;
+        public static final int donate_with_google=0x7f08001e;
+        public static final int google_wallet_classic=0x7f080024;
+        public static final int google_wallet_grayscale=0x7f080025;
+        public static final int google_wallet_monochrome=0x7f080026;
+        public static final int grayscale=0x7f080027;
+        public static final int holo_dark=0x7f08000f;
+        public static final int holo_light=0x7f080010;
+        public static final int hybrid=0x7f08000c;
+        public static final int icon_only=0x7f080003;
+        public static final int light=0x7f080008;
+        public static final int logo_only=0x7f08001f;
+        public static final int match_parent=0x7f080017;
+        public static final int mini=0x7f080001;
+        public static final int monochrome=0x7f080028;
+        public static final int none=0x7f08000b;
+        public static final int normal=0x7f080002;
+        public static final int production=0x7f080011;
+        public static final int sandbox=0x7f080012;
+        public static final int satellite=0x7f08000d;
+        public static final int selectionDetails=0x7f080016;
+        public static final int slide=0x7f08002a;
+        public static final int standard=0x7f080004;
+        public static final int strict_sandbox=0x7f080013;
+        public static final int terrain=0x7f08000e;
+        public static final int test=0x7f080014;
+        public static final int wide=0x7f080005;
+        public static final int wrap_content=0x7f080018;
     }
     public static final class integer {
-        public static final int google_play_services_version=0x7f080000;
+        public static final int google_play_services_version=0x7f090000;
     }
     public static final class raw {
         public static final int gtm_analytics=0x7f030000;
     }
     public static final class string {
-        public static final int accept=0x7f050002;
+        public static final int accept=0x7f06000c;
         /**  Brand name for Facebook [DO NOT TRANSLATE] 
          */
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f050007;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f060011;
         /**  Brand name for Google [DO NOT TRANSLATE] 
          */
-        public static final int auth_google_play_services_client_google_display_name=0x7f050006;
+        public static final int auth_google_play_services_client_google_display_name=0x7f060010;
         /**  Message of the notification to indicate an active cast display connection.  [CHAR LIMIT=80] NOTE: Same text as msgid="794424023757290105" 
          */
-        public static final int cast_notification_connected_message=0x7f05000b;
+        public static final int cast_notification_connected_message=0x7f060015;
         /**  Message of the notification to indicate the process of connecting to a cast display.  [CHAR LIMIT=80] NOTE: Same text as msgid="5435169294190995247" 
          */
-        public static final int cast_notification_connecting_message=0x7f05000a;
+        public static final int cast_notification_connecting_message=0x7f060014;
         /**  Label of a button to disconnect an active cast display connection.  [CHAR LIMIT=25] NOTE: Same text as msgid="9024230238785261495" 
          */
-        public static final int cast_notification_disconnect=0x7f05000c;
+        public static final int cast_notification_disconnect=0x7f060016;
         /**   Text for notification shown when the Android Wear apps needs to be updated. Only shown on the wearable. [CHAR LIMIT=NONE] 
          */
-        public static final int common_android_wear_notification_needs_update_text=0x7f05000f;
+        public static final int common_android_wear_notification_needs_update_text=0x7f060019;
         /**  Message in confirmation dialog informing user that they need to update
         the Android Wear app [CHAR LIMIT=NONE] 
          */
-        public static final int common_android_wear_update_text=0x7f05001c;
+        public static final int common_android_wear_update_text=0x7f060026;
         /**  Title of confirmation dialog informing user that they need to update
         the Android Wear app (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_android_wear_update_title=0x7f05001a;
+        public static final int common_android_wear_update_title=0x7f060024;
         /**  Message in confirmation dialog informing the user that one of the APIs they attepmt to access is not available. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_api_unavailable_text=0x7f050028;
+        public static final int common_google_play_services_api_unavailable_text=0x7f060032;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_button=0x7f050018;
+        public static final int common_google_play_services_enable_button=0x7f060022;
         /**  Message in confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_enable_text=0x7f050017;
+        public static final int common_google_play_services_enable_text=0x7f060021;
         /**  Title of confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_title=0x7f050016;
+        public static final int common_google_play_services_enable_title=0x7f060020;
         /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
          */
-        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f050011;
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f06001b;
         /**  Button in confirmation dialog for installing Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_button=0x7f050015;
+        public static final int common_google_play_services_install_button=0x7f06001f;
         /**  (For phones) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_phone=0x7f050013;
+        public static final int common_google_play_services_install_text_phone=0x7f06001d;
         /**  (For tablets) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_tablet=0x7f050014;
+        public static final int common_google_play_services_install_text_tablet=0x7f06001e;
         /**  Title of confirmation dialog informing user that they need to install
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_title=0x7f050012;
+        public static final int common_google_play_services_install_title=0x7f06001c;
         /**  Message in confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_invalid_account_text=0x7f050022;
+        public static final int common_google_play_services_invalid_account_text=0x7f06002c;
         /**  Title of confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_invalid_account_title=0x7f050021;
+        public static final int common_google_play_services_invalid_account_title=0x7f06002b;
         /**   Title for notification shown when GooglePlayServices needs to be enabled for an
         application to work. [CHAR LIMIT=70] 
          */
-        public static final int common_google_play_services_needs_enabling_title=0x7f050010;
+        public static final int common_google_play_services_needs_enabling_title=0x7f06001a;
         /**  Message in confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_network_error_text=0x7f050020;
+        public static final int common_google_play_services_network_error_text=0x7f06002a;
         /**  Title of confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_network_error_title=0x7f05001f;
+        public static final int common_google_play_services_network_error_title=0x7f060029;
         /**   Title for notification shown when GooglePlayServices needs to be updated for an
         application to work. [CHAR LIMIT=70] 
          */
-        public static final int common_google_play_services_notification_needs_update_title=0x7f05000e;
+        public static final int common_google_play_services_notification_needs_update_title=0x7f060018;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
          */
-        public static final int common_google_play_services_notification_ticker=0x7f05000d;
+        public static final int common_google_play_services_notification_ticker=0x7f060017;
         /**  Message in confirmation dialog informing the user that the account could not be signed in. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_sign_in_failed_text=0x7f05002a;
+        public static final int common_google_play_services_sign_in_failed_text=0x7f060034;
         /**  Title of confirmation dialog informing the user that the account could not be signed in. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_sign_in_failed_title=0x7f050029;
+        public static final int common_google_play_services_sign_in_failed_title=0x7f060033;
         /**  Message in confirmation dialog informing user there is an unknown issue in Google Play
         services [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unknown_issue=0x7f050023;
+        public static final int common_google_play_services_unknown_issue=0x7f06002d;
         /**  Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unsupported_text=0x7f050025;
+        public static final int common_google_play_services_unsupported_text=0x7f06002f;
         /**  Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_unsupported_title=0x7f050024;
+        public static final int common_google_play_services_unsupported_title=0x7f06002e;
         /**  Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_button=0x7f050026;
+        public static final int common_google_play_services_update_button=0x7f060030;
         /**  Message in confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_update_text=0x7f05001b;
+        public static final int common_google_play_services_update_text=0x7f060025;
         /**  Title of confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_title=0x7f050019;
+        public static final int common_google_play_services_update_title=0x7f060023;
         /**  Message in confirmation dialog informing user that Google Play services is currently
         updating [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_updating_text=0x7f05001e;
+        public static final int common_google_play_services_updating_text=0x7f060028;
         /**  Title of confirmation dialog informing user that Google Play services is currently
         updating [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_updating_title=0x7f05001d;
+        public static final int common_google_play_services_updating_title=0x7f060027;
         /**  Label for an action to open a notifications content on the phone [CHAR LIMIT=25] 
          */
-        public static final int common_open_on_phone=0x7f050027;
+        public static final int common_open_on_phone=0x7f060031;
         /**  Sign-in button text [CHAR LIMIT=15] 
          */
-        public static final int common_signin_button_text=0x7f050008;
+        public static final int common_signin_button_text=0x7f060012;
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
-        public static final int common_signin_button_text_long=0x7f050009;
-        public static final int create_calendar_message=0x7f050005;
-        public static final int create_calendar_title=0x7f050004;
-        public static final int decline=0x7f050003;
-        public static final int store_picture_message=0x7f050001;
-        public static final int store_picture_title=0x7f050000;
+        public static final int common_signin_button_text_long=0x7f060013;
+        public static final int create_calendar_message=0x7f06000f;
+        public static final int create_calendar_title=0x7f06000e;
+        public static final int decline=0x7f06000d;
+        public static final int define_FloatingActionButton=0x7f060000;
+        /**  Author section 
+         */
+        public static final int library_FloatingActionButton_author=0x7f060001;
+        public static final int library_FloatingActionButton_authorWebsite=0x7f060002;
+        /**  OpenSource section 
+         */
+        public static final int library_FloatingActionButton_isOpenSource=0x7f060007;
+        public static final int library_FloatingActionButton_libraryDescription=0x7f060004;
+        /**  Library section 
+         */
+        public static final int library_FloatingActionButton_libraryName=0x7f060003;
+        public static final int library_FloatingActionButton_libraryVersion=0x7f060006;
+        public static final int library_FloatingActionButton_libraryWebsite=0x7f060005;
+        /**  License section 
+         */
+        public static final int library_FloatingActionButton_licenseId=0x7f060009;
+        public static final int library_FloatingActionButton_repositoryLink=0x7f060008;
+        public static final int store_picture_message=0x7f06000b;
+        public static final int store_picture_title=0x7f06000a;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
  Text on a button that allows a user to make a payment with Google Wallet
          [CHAR LIMIT=30] 
          */
-        public static final int wallet_buy_button_place_holder=0x7f05002b;
+        public static final int wallet_buy_button_place_holder=0x7f060035;
     }
     public static final class style {
-        public static final int Theme_IAPTheme=0x7f040000;
-        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f040003;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f040002;
-        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f040001;
+        public static final int Theme_IAPTheme=0x7f070000;
+        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f070003;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f070002;
+        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f070001;
         /** 
          Default style of the wallet fragment that will be used if not set explicitly
          when fragment is created
     
          */
-        public static final int WalletFragmentDefaultStyle=0x7f040004;
+        public static final int WalletFragmentDefaultStyle=0x7f070004;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -760,18 +841,18 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize com.htetznaing.mmallsimregister:adSize}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSize com.htetznaing.mmallsimregistration:adSize}</code></td><td>
     The size of the ad.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes com.htetznaing.mmallsimregister:adSizes}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSizes com.htetznaing.mmallsimregistration:adSizes}</code></td><td>
     A comma-separated list of the supported ad sizes.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId com.htetznaing.mmallsimregister:adUnitId}</code></td><td> The ad unit ID.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId com.htetznaing.mmallsimregistration:adUnitId}</code></td><td> The ad unit ID.</td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
            @see #AdsAttrs_adUnitId
          */
         public static final int[] AdsAttrs = {
-            0x7f010000, 0x7f010001, 0x7f010002
+            0x7f010005, 0x7f010006, 0x7f010007
         };
         /**
           <p>
@@ -790,7 +871,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:adSize
+          @attr name com.htetznaing.mmallsimregistration:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
@@ -810,7 +891,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:adSizes
+          @attr name com.htetznaing.mmallsimregistration:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
@@ -826,7 +907,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:adUnitId
+          @attr name com.htetznaing.mmallsimregistration:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /**  Attributes that can be specified to define a custom theme 
@@ -835,12 +916,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle com.htetznaing.mmallsimregister:windowTransitionStyle}</code></td><td> Defines the set of transition to be used between activities </td></tr>
+           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle com.htetznaing.mmallsimregistration:windowTransitionStyle}</code></td><td> Defines the set of transition to be used between activities </td></tr>
            </table>
            @see #CustomWalletTheme_windowTransitionStyle
          */
         public static final int[] CustomWalletTheme = {
-            0x7f010029
+            0x7f01002e
         };
         /**
           <p>
@@ -858,21 +939,119 @@ containing a value of this type.
 <tr><td><code>none</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:windowTransitionStyle
+          @attr name com.htetznaing.mmallsimregistration:windowTransitionStyle
         */
         public static final int CustomWalletTheme_windowTransitionStyle = 0;
+        /** Attributes that can be used with a FloatingActionButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_colorNormal com.htetznaing.mmallsimregistration:fab_colorNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_colorPressed com.htetznaing.mmallsimregistration:fab_colorPressed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_colorRipple com.htetznaing.mmallsimregistration:fab_colorRipple}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_shadow com.htetznaing.mmallsimregistration:fab_shadow}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fab_type com.htetznaing.mmallsimregistration:fab_type}</code></td><td></td></tr>
+           </table>
+           @see #FloatingActionButton_fab_colorNormal
+           @see #FloatingActionButton_fab_colorPressed
+           @see #FloatingActionButton_fab_colorRipple
+           @see #FloatingActionButton_fab_shadow
+           @see #FloatingActionButton_fab_type
+         */
+        public static final int[] FloatingActionButton = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#fab_colorNormal}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.htetznaing.mmallsimregistration:fab_colorNormal
+        */
+        public static final int FloatingActionButton_fab_colorNormal = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#fab_colorPressed}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.htetznaing.mmallsimregistration:fab_colorPressed
+        */
+        public static final int FloatingActionButton_fab_colorPressed = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#fab_colorRipple}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.htetznaing.mmallsimregistration:fab_colorRipple
+        */
+        public static final int FloatingActionButton_fab_colorRipple = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#fab_shadow}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.htetznaing.mmallsimregistration:fab_shadow
+        */
+        public static final int FloatingActionButton_fab_shadow = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#fab_type}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>mini</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.htetznaing.mmallsimregistration:fab_type
+        */
+        public static final int FloatingActionButton_fab_type = 4;
         /**  Attributes for LoadingImageView 
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop com.htetznaing.mmallsimregister:circleCrop}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.htetznaing.mmallsimregistration:circleCrop}</code></td><td>
         Whether or not this view should have a circular clip applied
         </td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.htetznaing.mmallsimregister:imageAspectRatio}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.htetznaing.mmallsimregistration:imageAspectRatio}</code></td><td>
         The fixed aspect ratio to use in aspect ratio adjustments.</td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.htetznaing.mmallsimregister:imageAspectRatioAdjust}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.htetznaing.mmallsimregistration:imageAspectRatioAdjust}</code></td><td>
         What kind of aspect ratio adjustment to do.</td></tr>
            </table>
            @see #LoadingImageView_circleCrop
@@ -880,7 +1059,7 @@ containing a value of this type.
            @see #LoadingImageView_imageAspectRatioAdjust
          */
         public static final int[] LoadingImageView = {
-            0x7f010006, 0x7f010007, 0x7f010008
+            0x7f01000b, 0x7f01000c, 0x7f01000d
         };
         /**
           <p>
@@ -897,7 +1076,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:circleCrop
+          @attr name com.htetznaing.mmallsimregistration:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
@@ -915,7 +1094,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:imageAspectRatio
+          @attr name com.htetznaing.mmallsimregistration:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
@@ -938,7 +1117,7 @@ containing a value of this type.
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:imageAspectRatioAdjust
+          @attr name com.htetznaing.mmallsimregistration:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MapAttrs.
@@ -947,23 +1126,23 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_ambientEnabled com.htetznaing.mmallsimregister:ambientEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.htetznaing.mmallsimregister:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.htetznaing.mmallsimregister:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.htetznaing.mmallsimregister:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.htetznaing.mmallsimregister:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.htetznaing.mmallsimregister:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_liteMode com.htetznaing.mmallsimregister:liteMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.htetznaing.mmallsimregister:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.htetznaing.mmallsimregister:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.htetznaing.mmallsimregister:uiMapToolbar}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.htetznaing.mmallsimregister:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.htetznaing.mmallsimregister:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.htetznaing.mmallsimregister:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.htetznaing.mmallsimregister:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.htetznaing.mmallsimregister:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.htetznaing.mmallsimregister:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.htetznaing.mmallsimregister:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_ambientEnabled com.htetznaing.mmallsimregistration:ambientEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.htetznaing.mmallsimregistration:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.htetznaing.mmallsimregistration:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.htetznaing.mmallsimregistration:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.htetznaing.mmallsimregistration:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.htetznaing.mmallsimregistration:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode com.htetznaing.mmallsimregistration:liteMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.htetznaing.mmallsimregistration:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.htetznaing.mmallsimregistration:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.htetznaing.mmallsimregistration:uiMapToolbar}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.htetznaing.mmallsimregistration:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.htetznaing.mmallsimregistration:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.htetznaing.mmallsimregistration:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.htetznaing.mmallsimregistration:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.htetznaing.mmallsimregistration:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.htetznaing.mmallsimregistration:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.htetznaing.mmallsimregistration:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_ambientEnabled
            @see #MapAttrs_cameraBearing
@@ -984,14 +1163,14 @@ containing a value of this type.
            @see #MapAttrs_zOrderOnTop
          */
         public static final int[] MapAttrs = {
-            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c,
-            0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010,
-            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014,
-            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018,
-            0x7f010019
+            0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011,
+            0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
+            0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
+            0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d,
+            0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#ambientEnabled}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#ambientEnabled}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1001,11 +1180,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:ambientEnabled
+          @attr name com.htetznaing.mmallsimregistration:ambientEnabled
         */
         public static final int MapAttrs_ambientEnabled = 16;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1015,11 +1194,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:cameraBearing
+          @attr name com.htetznaing.mmallsimregistration:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1029,11 +1208,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:cameraTargetLat
+          @attr name com.htetznaing.mmallsimregistration:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1043,11 +1222,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:cameraTargetLng
+          @attr name com.htetznaing.mmallsimregistration:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1057,11 +1236,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:cameraTilt
+          @attr name com.htetznaing.mmallsimregistration:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1071,11 +1250,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:cameraZoom
+          @attr name com.htetznaing.mmallsimregistration:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#liteMode}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#liteMode}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1085,11 +1264,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:liteMode
+          @attr name com.htetznaing.mmallsimregistration:liteMode
         */
         public static final int MapAttrs_liteMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1105,11 +1284,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.htetznaing.mmallsimregister:mapType
+          @attr name com.htetznaing.mmallsimregistration:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1119,11 +1298,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:uiCompass
+          @attr name com.htetznaing.mmallsimregistration:uiCompass
         */
         public static final int MapAttrs_uiCompass = 7;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#uiMapToolbar}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#uiMapToolbar}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1133,11 +1312,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:uiMapToolbar
+          @attr name com.htetznaing.mmallsimregistration:uiMapToolbar
         */
         public static final int MapAttrs_uiMapToolbar = 15;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1147,11 +1326,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:uiRotateGestures
+          @attr name com.htetznaing.mmallsimregistration:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1161,11 +1340,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:uiScrollGestures
+          @attr name com.htetznaing.mmallsimregistration:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1175,11 +1354,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:uiTiltGestures
+          @attr name com.htetznaing.mmallsimregistration:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 10;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1189,11 +1368,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:uiZoomControls
+          @attr name com.htetznaing.mmallsimregistration:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 11;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1203,11 +1382,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:uiZoomGestures
+          @attr name com.htetznaing.mmallsimregistration:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 12;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1217,11 +1396,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:useViewLifecycle
+          @attr name com.htetznaing.mmallsimregistration:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -1231,7 +1410,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.htetznaing.mmallsimregister:zOrderOnTop
+          @attr name com.htetznaing.mmallsimregistration:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 14;
         /**  Attributes for SignInButton
@@ -1244,19 +1423,19 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SignInButton_buttonSize com.htetznaing.mmallsimregister:buttonSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_colorScheme com.htetznaing.mmallsimregister:colorScheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_scopeUris com.htetznaing.mmallsimregister:scopeUris}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_buttonSize com.htetznaing.mmallsimregistration:buttonSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_colorScheme com.htetznaing.mmallsimregistration:colorScheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_scopeUris com.htetznaing.mmallsimregistration:scopeUris}</code></td><td></td></tr>
            </table>
            @see #SignInButton_buttonSize
            @see #SignInButton_colorScheme
            @see #SignInButton_scopeUris
          */
         public static final int[] SignInButton = {
-            0x7f010003, 0x7f010004, 0x7f010005
+            0x7f010008, 0x7f010009, 0x7f01000a
         };
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#buttonSize}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#buttonSize}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -1272,11 +1451,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>wide</code></td><td>1</td><td></td></tr>
 <tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.htetznaing.mmallsimregister:buttonSize
+          @attr name com.htetznaing.mmallsimregistration:buttonSize
         */
         public static final int SignInButton_buttonSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#colorScheme}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#colorScheme}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -1292,18 +1471,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>light</code></td><td>1</td><td></td></tr>
 <tr><td><code>auto</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.htetznaing.mmallsimregister:colorScheme
+          @attr name com.htetznaing.mmallsimregistration:colorScheme
         */
         public static final int SignInButton_colorScheme = 1;
         /**
-          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregister.R.attr#scopeUris}
+          <p>This symbol is the offset where the {@link com.htetznaing.mmallsimregistration.R.attr#scopeUris}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-          @attr name com.htetznaing.mmallsimregister:scopeUris
+          @attr name com.htetznaing.mmallsimregistration:scopeUris
         */
         public static final int SignInButton_scopeUris = 2;
         /**  Attributes for the WalletFragment &lt;fragment&gt; tag 
@@ -1312,10 +1491,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_appTheme com.htetznaing.mmallsimregister:appTheme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment com.htetznaing.mmallsimregister:environment}</code></td><td> Google Wallet environment to use </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.htetznaing.mmallsimregister:fragmentMode}</code></td><td> Fragment mode </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.htetznaing.mmallsimregister:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_appTheme com.htetznaing.mmallsimregistration:appTheme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment com.htetznaing.mmallsimregistration:environment}</code></td><td> Google Wallet environment to use </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.htetznaing.mmallsimregistration:fragmentMode}</code></td><td> Fragment mode </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.htetznaing.mmallsimregistration:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
            </table>
            @see #WalletFragmentOptions_appTheme
            @see #WalletFragmentOptions_environment
@@ -1323,7 +1502,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #WalletFragmentOptions_fragmentStyle
          */
         public static final int[] WalletFragmentOptions = {
-            0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d
+            0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022
         };
         /**
           <p>
@@ -1341,7 +1520,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:appTheme
+          @attr name com.htetznaing.mmallsimregistration:appTheme
         */
         public static final int WalletFragmentOptions_appTheme = 0;
         /**
@@ -1362,7 +1541,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:environment
+          @attr name com.htetznaing.mmallsimregistration:environment
         */
         public static final int WalletFragmentOptions_environment = 1;
         /**
@@ -1381,7 +1560,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:fragmentMode
+          @attr name com.htetznaing.mmallsimregistration:fragmentMode
         */
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
@@ -1393,7 +1572,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:fragmentStyle
+          @attr name com.htetznaing.mmallsimregistration:fragmentStyle
         */
         public static final int WalletFragmentOptions_fragmentStyle = 2;
         /**  Attributes that may be specified in a style resource to customize the look and feel of
@@ -1403,17 +1582,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.htetznaing.mmallsimregister:buyButtonAppearance}</code></td><td> The appearance of the buy button </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.htetznaing.mmallsimregister:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.htetznaing.mmallsimregister:buyButtonText}</code></td><td> The text on the buy button </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.htetznaing.mmallsimregister:buyButtonWidth}</code></td><td> Width of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.htetznaing.mmallsimregister:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.htetznaing.mmallsimregister:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.htetznaing.mmallsimregister:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.htetznaing.mmallsimregister:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.htetznaing.mmallsimregister:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.htetznaing.mmallsimregister:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.htetznaing.mmallsimregister:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.htetznaing.mmallsimregistration:buyButtonAppearance}</code></td><td> The appearance of the buy button </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.htetznaing.mmallsimregistration:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.htetznaing.mmallsimregistration:buyButtonText}</code></td><td> The text on the buy button </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.htetznaing.mmallsimregistration:buyButtonWidth}</code></td><td> Width of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.htetznaing.mmallsimregistration:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.htetznaing.mmallsimregistration:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.htetznaing.mmallsimregistration:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.htetznaing.mmallsimregistration:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.htetznaing.mmallsimregistration:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.htetznaing.mmallsimregistration:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.htetznaing.mmallsimregistration:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
            </table>
            @see #WalletFragmentStyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
@@ -1428,9 +1607,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #WalletFragmentStyle_maskedWalletDetailsTextAppearance
          */
         public static final int[] WalletFragmentStyle = {
-            0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021,
-            0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025,
-            0x7f010026, 0x7f010027, 0x7f010028
+            0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026,
+            0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a,
+            0x7f01002b, 0x7f01002c, 0x7f01002d
         };
         /**
           <p>
@@ -1455,7 +1634,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:buyButtonAppearance
+          @attr name com.htetznaing.mmallsimregistration:buyButtonAppearance
         */
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
@@ -1484,7 +1663,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:buyButtonHeight
+          @attr name com.htetznaing.mmallsimregistration:buyButtonHeight
         */
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
@@ -1508,7 +1687,7 @@ containing a value of this type.
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:buyButtonText
+          @attr name com.htetznaing.mmallsimregistration:buyButtonText
         */
         public static final int WalletFragmentStyle_buyButtonText = 2;
         /**
@@ -1537,7 +1716,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:buyButtonWidth
+          @attr name com.htetznaing.mmallsimregistration:buyButtonWidth
         */
         public static final int WalletFragmentStyle_buyButtonWidth = 1;
         /**
@@ -1551,7 +1730,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:maskedWalletDetailsBackground
+          @attr name com.htetznaing.mmallsimregistration:maskedWalletDetailsBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
@@ -1565,7 +1744,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:maskedWalletDetailsButtonBackground
+          @attr name com.htetznaing.mmallsimregistration:maskedWalletDetailsButtonBackground
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
@@ -1577,7 +1756,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:maskedWalletDetailsButtonTextAppearance
+          @attr name com.htetznaing.mmallsimregistration:maskedWalletDetailsButtonTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
@@ -1589,7 +1768,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:maskedWalletDetailsHeaderTextAppearance
+          @attr name com.htetznaing.mmallsimregistration:maskedWalletDetailsHeaderTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
@@ -1611,7 +1790,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:maskedWalletDetailsLogoImageType
+          @attr name com.htetznaing.mmallsimregistration:maskedWalletDetailsLogoImageType
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
@@ -1628,7 +1807,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:maskedWalletDetailsLogoTextColor
+          @attr name com.htetznaing.mmallsimregistration:maskedWalletDetailsLogoTextColor
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
@@ -1640,7 +1819,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.htetznaing.mmallsimregister:maskedWalletDetailsTextAppearance
+          @attr name com.htetznaing.mmallsimregistration:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
     };

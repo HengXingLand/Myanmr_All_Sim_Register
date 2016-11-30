@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.htetznaing.mmallsimregister"
-	android:versionCode="3"
-	android:versionName="1.0"
+	package="com.htetznaing.mmallsimregistration"
+	android:versionCode="4"
+	android:versionName="1.2"
 	android:installLocation="auto">
 	
 	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>
@@ -30,8 +30,7 @@
 			android:launchMode="singleTop"
 			android:name=".main"
 			android:label="Myanmar All Sim Register!"
-			android:screenOrientation="unspecified"
-			android:theme="@android:style/Theme.Holo">
+			android:screenOrientation="unspecified">
 			<intent-filter>
 			   <action android:name="android.intent.action.MAIN" />
 			   <category android:name="android.intent.category.LAUNCHER" />
@@ -52,5 +51,12 @@
 			<action android:name="android.intent.action.BOOT_COMPLETED"/>
 			</intent-filter>
 		</receiver>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".lollipop"
+			android:label="Myanmar All Sim Register!"
+			android:screenOrientation="unspecified">
+		</activity>
 	</application>
 </manifest>
