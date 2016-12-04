@@ -200,8 +200,11 @@ End Sub
 	End Sub
 
  Sub rad_Click
+ 	If ph.SdkVersion > 19 Then
+	t1.Enabled = True
  	t.Enabled = False
 	t1.Enabled = False
+	end if
 End Sub
 
 Sub about_Click
@@ -283,7 +286,9 @@ StartActivity (ShareIt)
 End Sub
 
 Sub help_Click
+		If ph.SdkVersion > 19 Then
 	t1.Enabled = True
+	End If
 	Dim p As PhoneIntents
 	StartActivity(p.OpenBrowser("http://ht3tzn4ing.blogspot.com/2016/11/MyanmarAllSimRegister.html"))
 End Sub
@@ -313,7 +318,9 @@ Sub t_tick
 End Sub
 
 Sub bTelenor_Click
+		If ph.SdkVersion > 19 Then
 	t1.Enabled = True
+	End If
 	Dim p As PhoneIntents
 	StartActivity(p.OpenBrowser("https://ecaf.telenor.com.mm/"))
 End Sub
@@ -325,7 +332,9 @@ StartActivity(i)
 End Sub
 
 Sub bMPT_Click
+		If ph.SdkVersion > 19 Then
 	t1.Enabled = True
+	End If
 	Dim p As PhoneIntents
 	StartActivity(p.OpenBrowser("https://care.mpt.com.mm/"))
 End Sub
@@ -337,7 +346,9 @@ StartActivity(i)
 End Sub
 
 Sub bOoredoo_CLick
+		If ph.SdkVersion > 19 Then
 	t1.Enabled = True
+	End If
 	Dim p As PhoneIntents
 	StartActivity(p.OpenBrowser("http://www.ooredoo.com.mm/en/Personal/SelfCare/SIM-Registration.aspx"))
 End Sub
@@ -349,7 +360,9 @@ StartActivity(i)
 End Sub
 
 Sub bMEC_Click
+		If ph.SdkVersion > 19 Then
 	t1.Enabled = True
+	End If
 	Dim p As PhoneIntents
 	StartActivity(p.OpenBrowser("http://reg.mectel.com.mm/"))
 End Sub
@@ -425,35 +438,17 @@ public void _onCreate() {
 #end if
 
 Sub Activity_Pause (UserClosed As Boolean)
-   AdView1.Pause
+
 End Sub
 
 Sub Activity_Resume
-   AdView1.Resume
-End Sub
 
-Sub Ad_FailedToReceiveAd (ErrorCode As String)
-    Log("failed: " & ErrorCode)
-End Sub
-
-Sub Ad_ReceiveAd
-    Log("received")
-End Sub
-
-Sub Ad_AdScreenDismissed
-   Log("screen dismissed")
-End Sub
-
-Sub mwadi_AdFailedToLoad (ErrorCode As String)
-    Log("failed to load ad")
-End Sub
-
-Sub mwadi_AdLoaded
-    Log("ad loaded")
 End Sub
 
 Sub lblFooter_Click
+		If ph.SdkVersion > 19 Then
 	t1.Enabled = True
+	End If
 	Dim p As PhoneIntents
 	StartActivity(p.OpenBrowser("https://www.facebook.com/Khun.Htetz.Naing"))
 End Sub
@@ -463,12 +458,16 @@ Sub Activity_KeyPress (KeyCode As Int) As Boolean
   If KeyCode = KeyCodes.KEYCODE_BACK Then
     Answ = Msgbox2("Do you want to Exit App?", "Attention!", "Yes", "", "No", Null)
     If Answ = DialogResponse.NEGATIVE Then
-		t1.Enabled = True
+			If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
       Return True
     End If
   End If
   If Answ = DialogResponse.POSITIVE Then
-  	t1.Enabled = True
+  		If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
   Return False
   End If
 End Sub
