@@ -2,8 +2,8 @@
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.htetznaing.mmallsimregistration"
-	android:versionCode="4"
-	android:versionName="1.2"
+	android:versionCode="8"
+	android:versionName="1.6"
 	android:installLocation="auto">
 	
 	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>
@@ -37,13 +37,6 @@
 			</intent-filter>
 			
 		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
-			android:name=".ads"
-			android:label="Myanmar All Sim Register!"
-			android:screenOrientation="unspecified">
-		</activity>
 		<service android:name=".runads">
 		</service>
 		<receiver android:name=".runads$runads_BR">
@@ -51,6 +44,13 @@
 			<action android:name="android.intent.action.BOOT_COMPLETED"/>
 			</intent-filter>
 		</receiver>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".ads"
+			android:label="Myanmar All Sim Register!"
+			android:screenOrientation="unspecified">
+		</activity>
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"

@@ -35,9 +35,9 @@ Activity.AddView(Banner,0%x,90%y,100%x,10%y)
 
 Interstitial.Initialize("Interstitial","ca-app-pub-4173348573252986/2666160959")
 Interstitial.LoadAd
-End If
 t.Initialize("t",10000)
 t.Enabled=True
+End If
 	Activity.Title = "About"
 	abg.Initialize(LoadBitmap(File.DirAssets,"bg.jpg"))
 	Activity.Background = abg
@@ -93,7 +93,7 @@ End Sub
 		End If
 		
 		If Interstitial.Status = Interstitial.Status_Dismissed Then
-			Interstitial.LoadAd
+		Interstitial.LoadAd
 End If
 End If
 End Sub

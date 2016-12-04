@@ -332,8 +332,8 @@ public anywheresoftware.b4a.admobwrapper.AdViewWrapper _banner = null;
 public mobi.mindware.admob.interstitial.AdmobInterstitialsAds _interstitial = null;
 public anywheresoftware.b4a.phone.Phone _ph = null;
 public com.htetznaing.mmallsimregistration.main _main = null;
-public com.htetznaing.mmallsimregistration.ads _ads = null;
 public com.htetznaing.mmallsimregistration.runads _runads = null;
+public com.htetznaing.mmallsimregistration.ads _ads = null;
 
 public static void initializeProcessGlobals() {
              try {
@@ -363,11 +363,11 @@ mostCurrent._activity.AddView((android.view.View)(mostCurrent._banner.getObject(
 mostCurrent._interstitial.Initialize(mostCurrent.activityBA,"Interstitial","ca-app-pub-4173348573252986/2666160959");
  //BA.debugLineNum = 32;BA.debugLine="Interstitial.LoadAd";
 mostCurrent._interstitial.LoadAd(mostCurrent.activityBA);
- };
- //BA.debugLineNum = 34;BA.debugLine="t.Initialize(\"t\",10000)";
+ //BA.debugLineNum = 33;BA.debugLine="t.Initialize(\"t\",10000)";
 _t.Initialize(processBA,"t",(long) (10000));
- //BA.debugLineNum = 35;BA.debugLine="t.Enabled=True";
+ //BA.debugLineNum = 34;BA.debugLine="t.Enabled=True";
 _t.setEnabled(anywheresoftware.b4a.keywords.Common.True);
+ };
  //BA.debugLineNum = 36;BA.debugLine="Activity.Title = \"About\"";
 mostCurrent._activity.setTitle((Object)("About"));
  //BA.debugLineNum = 37;BA.debugLine="abg.Initialize(LoadBitmap(File.DirAssets,\"bg.jpg\"";
