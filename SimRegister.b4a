@@ -184,6 +184,58 @@ Sub Activity_Create(FirstTime As Boolean)
 	Activity.AddView(bMEC,15%x,(bOoredoo.Top+bOoredoo.Height)+3%y,70%x,50dip)
 	Activity.AddView (lblFooter , 10dip,95%y, 100%x - 20dip ,5%y )
 
+<<<<<<< HEAD
+=======
+	Activity.AddMenuItem("Stop Showing Ads!","rad")
+Activity.AddMenuItem("Change Theme","ct")
+	Activity.AddMenuItem3("Share App","share",LoadBitmap(File.DirAssets,"share.png"),True)
+	Activity.AddMenuItem("How to Use.?","help")
+	Activity.AddMenuItem("About","about")
+	Activity.AddMenuItem("Call SIM Operator","cso")
+	
+		If FirstTime Then
+	wv.Initialize("wv")
+	wv.LoadUrl("file:///android_asset/sp.html")
+	wv.Visible=True
+	wv.ZoomEnabled = False
+	
+	bsbg.Initialize(Colors.Blue,15)
+	bstart.Initialize("bstart")
+	bstart.Text = ">> Start >>"
+	bstart.Background = bsbg
+	fb.Hide(True)
+	fb1.Hide(True)
+	Activity.AddView(wv,0%x,0%y,100%x,100%y)
+	Activity.AddView(bstart,60%x,87%y,35%x,8%y)
+	
+	bTelenor.Visible = False
+	bMPT.Visible = False
+	bOoredoo.Visible = False
+	bMEC.Visible = False
+	End If
+End Sub
+ 
+ Sub bstart_Click
+ 	wv.Visible = False
+	bstart.Visible = False
+	fb.Hide(False)
+	fb1.Hide(False)
+	fb.Show(True)
+	fb1.Show(True)
+	
+	bTelenor.Visible = True
+	bMPT.Visible = True
+	bOoredoo.Visible = True
+	bMEC.Visible = True
+	End Sub
+
+ Sub rad_Click
+ 	If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+ 	t.Enabled = False
+	t1.Enabled = False
+	end if
+>>>>>>> origin/master
 End Sub
 
 Sub about_Click
@@ -256,6 +308,16 @@ Sub AdView2_AdClosed
 	AdView2.LoadAd
 End Sub
 
+<<<<<<< HEAD
+=======
+Sub help_Click
+		If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("http://ht3tzn4ing.blogspot.com/2016/11/MyanmarAllSimRegister.html"))
+End Sub
+>>>>>>> origin/master
 Sub t1_tick
 	If AdView2.Ready Then AdView2.Show
 		
@@ -270,8 +332,15 @@ Sub t_tick
 End Sub
 
 Sub bTelenor_Click
+		If ph.SdkVersion > 19 Then
 	t1.Enabled = True
+<<<<<<< HEAD
 	StartActivity(Telenor)
+=======
+	End If
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("https://ecaf.telenor.com.mm/"))
+>>>>>>> origin/master
 End Sub
 
 Sub bMPT_Click
@@ -279,22 +348,41 @@ t1.Enabled = True
 StartActivity(MPT)
 End Sub
 
+<<<<<<< HEAD
 Sub bOoredoo_CLick
 	t1.Enabled = True
 	StartActivity(Ooredoo)
+=======
+Sub bMPT_Click
+		If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("https://care.mpt.com.mm/"))
+>>>>>>> origin/master
 End Sub
 
 Sub bMEC_Click
 StartActivity(MecTel)
 End Sub
 
+<<<<<<< HEAD
 Sub Activity_Pause (UserClosed As Boolean)
+=======
+Sub bOoredoo_CLick
+		If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("http://www.ooredoo.com.mm/en/Personal/SelfCare/SIM-Registration.aspx"))
+>>>>>>> origin/master
 End Sub
 
 Sub Activity_Resume
 
 End Sub
 
+<<<<<<< HEAD
 Sub lblFooter_Click
 		t1.Enabled = True
 	Try
@@ -306,6 +394,14 @@ Sub lblFooter_Click
 		i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MmFreeAndroidApps")
 		StartActivity(i)
 	End Try
+=======
+Sub bMEC_Click
+		If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("http://reg.mectel.com.mm/"))
+>>>>>>> origin/master
 End Sub
 
 Sub Activity_KeyPress (KeyCode As Int) As Boolean
@@ -389,6 +485,7 @@ Sub menu_Click
 	If idd_int = 3 Then
 		StartActivity(lollipop)
 	End If
+<<<<<<< HEAD
 End Sub
 
 Sub share_Click
@@ -402,3 +499,53 @@ Sub share_Click
 	ShareIt.WrapAsIntentChooser("Share App Via...")
 	StartActivity (ShareIt)
 End Sub
+=======
+	If Theme = Theme_Value Then Return
+	Theme_Value = Theme		
+	Activity.Finish
+	StartActivity(Me)		
+End Sub
+
+
+#if java
+public void _onCreate() {
+	if (_theme_value != 0)
+		setTheme(_theme_value);
+}
+#end if
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub lblFooter_Click
+		If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
+	Dim p As PhoneIntents
+	StartActivity(p.OpenBrowser("https://www.facebook.com/Khun.Htetz.Naing"))
+End Sub
+
+Sub Activity_KeyPress (KeyCode As Int) As Boolean
+  Dim Answ As Int
+  If KeyCode = KeyCodes.KEYCODE_BACK Then
+    Answ = Msgbox2("Do you want to Exit App?", "Attention!", "Yes", "", "No", Null)
+    If Answ = DialogResponse.NEGATIVE Then
+			If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
+      Return True
+    End If
+  End If
+  If Answ = DialogResponse.POSITIVE Then
+  		If ph.SdkVersion > 19 Then
+	t1.Enabled = True
+	End If
+  Return False
+  End If
+End Sub
+>>>>>>> origin/master
