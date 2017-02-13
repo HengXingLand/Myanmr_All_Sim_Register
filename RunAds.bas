@@ -1,5 +1,5 @@
 ﻿Type=Service
-Version=6.3
+Version=6.5
 ModulesStructureVersion=1
 B4A=true
 @EndOfDesignText@
@@ -13,15 +13,14 @@ End Sub
 
 Sub Service_Create
 t.Initialize("t",6000000)
-t.Enabled = True
+End Sub
+
+Sub Service_Start (StartingIntent As Intent)
+	t.Enabled = True
 End Sub
 
 Sub t_Tick
 	StartActivity(Ads)
-End Sub
-
-Sub Service_Start (StartingIntent As Intent)
-
 End Sub
 
 Sub Service_Destroy

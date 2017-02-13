@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.htetznaing.mmallsimregistration"
-	android:versionCode="8"
-	android:versionName="1.6"
+	package="com.htetznaing.mmallsimnew"
+	android:versionCode="13"
+	android:versionName="2.5"
 	android:installLocation="auto">
 	
 	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>
@@ -14,22 +14,32 @@
 	    android:anyDensity="true"/>
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 	<application
 		android:icon="@drawable/icon"
-		android:label="Myanmar All Sim Register!">
+		android:label="Myanmar All Sim Registration">
 		
-		<meta-data android:name="com.google.android.gms.version"
-		  android:value="@integer/google_play_services_version"/>
-		<activity android:name="com.google.android.gms.ads.AdActivity"
-		  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+		<activity android:name="com.google.android.gms.common.api.GoogleApiActivity"
+		  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		  android:exported="false"/>
+		    <meta-data
+		  android:name="com.google.android.gms.version"
+		  android:value="@integer/google_play_services_version" />
+		<activity
+		  android:name="com.google.android.gms.ads.AdActivity"
+		  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+		  android:theme="@android:style/Theme.Translucent" />
+		  <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+		  android:theme="@style/Theme.IAPTheme"/>
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
 			android:name=".main"
-			android:label="Myanmar All Sim Register!"
+			android:label="Myanmar All Sim Registration"
 			android:screenOrientation="unspecified">
 			<intent-filter>
 			   <action android:name="android.intent.action.MAIN" />
@@ -48,14 +58,49 @@
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
 			android:name=".ads"
-			android:label="Myanmar All Sim Register!"
+			android:label="Myanmar All Sim Registration"
 			android:screenOrientation="unspecified">
 		</activity>
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
 			android:name=".lollipop"
-			android:label="Myanmar All Sim Register!"
+			android:label="Myanmar All Sim Registration"
+			android:screenOrientation="unspecified">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".tutorial"
+			android:label="Myanmar All Sim Registration"
+			android:screenOrientation="unspecified">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".telenor"
+			android:label="Myanmar All Sim Registration"
+			android:screenOrientation="unspecified">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".mpt"
+			android:label="Myanmar All Sim Registration"
+			android:screenOrientation="unspecified">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".ooredoo"
+			android:label="Myanmar All Sim Registration"
+			android:screenOrientation="unspecified">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".mectel"
+			android:label="Myanmar All Sim Registration"
 			android:screenOrientation="unspecified">
 		</activity>
 	</application>

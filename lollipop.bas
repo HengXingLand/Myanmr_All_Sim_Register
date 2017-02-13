@@ -1,11 +1,11 @@
 ﻿Type=Activity
-Version=6.3
+Version=6.5
 ModulesStructureVersion=1
 B4A=true
 @EndOfDesignText@
 #Region  Activity Attributes 
 	#FullScreen: False
-	#IncludeTitle: True
+	#IncludeTitle: False
 #End Region
 
 Sub Process_Globals
@@ -22,22 +22,23 @@ Sub Globals
 	Dim lstOne As ListView 
 	Dim abg As BitmapDrawable
 	Dim Banner As AdView
-	Dim Interstitial As mwAdmobInterstitial
+	Dim Interstitial As InterstitialAd
 	Dim ph As Phone
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
+	
 	ph.SetScreenOrientation(1)
-	If ph.SdkVersion > 19 Then
-Banner.Initialize("Banner","ca-app-pub-4173348573252986/8712694553")
-Banner.LoadAd
-Activity.AddView(Banner,0%x,90%y,100%x,10%y)
-
-Interstitial.Initialize("Interstitial","ca-app-pub-4173348573252986/2666160959")
-Interstitial.LoadAd
+	Banner.Initialize("AdView1","ca-app-pub-4173348573252986/4583640954")
+	Banner.LoadAd
+	Activity.AddView(Banner, 0%x,100%y - 50dip, 100%x, 50dip)
+	
+	Interstitial.Initialize("AdView2","ca-app-pub-4173348573252986/6060374151")
+	Interstitial.LoadAd
+	
 t.Initialize("t",10000)
 t.Enabled=True
-End If
+
 	Activity.Title = "About"
 	abg.Initialize(LoadBitmap(File.DirAssets,"bg.jpg"))
 	Activity.Background = abg
@@ -71,9 +72,10 @@ End If
 	lstOne.SingleLineLayout .ItemHeight = 40dip
 	lstOne.AddSingleLine2 ("Developed By : Khun Htetz Naing    ", 1)
 	lstOne.AddSingleLine2 ("Email : khunht3tzn4ing@gmail.com    ",2)
-	lstOne.AddSingleLine2 ("Phone : +959776003982    ",3)
-	lstOne.AddSingleLine2 ("Facebook : www.facebook.com/Khun.Htetz.Naing   ", 4)
-	Activity.AddView ( lstOne, 30dip , 170dip , 100%x -  60dip, 160dip)
+	lstOne.AddSingleLine2 ("Powered By : Myanmar Android Apps    ",3)
+	lstOne.AddSingleLine2 ("Website : www.htetznaing.com  ", 4)
+	lstOne.AddSingleLine2 ("Facebook : www.fb.com/MmFreeAndroidApps   ", 5)
+	Activity.AddView ( lstOne, 30dip , 170dip , 100%x -  60dip, 200dip)
 	
 	Dim lblCredit As Label 
 	lblCredit.Initialize ("lblCredit")
@@ -86,28 +88,54 @@ End If
 		
 End Sub
  
- Sub t_Tick
- 	If ph.SdkVersion > 19 Then
- 	If Interstitial.Status = Interstitial.Status_AdReadyToShow Then
-		Interstitial.Show
-		End If
-		
-		If Interstitial.Status = Interstitial.Status_Dismissed Then
-		Interstitial.LoadAd
-End If
-End If
+Sub Interstitial_AdClosed
+	Interstitial.LoadAd
 End Sub
 
- Sub imv_Click
- 	StartActivity(p.OpenBrowser("https://www.facebook.com/Khun.Htetz.Naing/"))
+Sub t_Tick
+	If Interstitial.Ready Then Interstitial.Show
+		
+	If Interstitial.Ready = False Then Interstitial.LoadAd
+End Sub
+
+Sub imv_Click
+	Try
+ 
+		Dim Facebook As Intent
+ 
+		Facebook.Initialize(Facebook.ACTION_VIEW, "fb://profile/100006126339714")
+		StartActivity(Facebook)
+ 
+	Catch
+ 
+		Dim i As Intent
+		i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MgHtetzNaing")
+ 
+		StartActivity(i)
+ 
+	End Try
 End Sub
 
 Sub lbname_Click
- 	StartActivity(p.OpenBrowser("https://play.google.com/store/apps/details?id=com.htetznaing.mmallsimregistration"))
+ 	StartActivity(p.OpenBrowser("https://play.google.com/store/apps/details?id=com.htetznaing.mmallsimregistration2"))
 End Sub
 
 Sub lblCredit_Click
-	StartActivity(p.OpenBrowser ("https://play.google.com/store/apps/details?id=com.htetznaing.mmallsimregistration"))
+	Try
+ 
+		Dim Facebook As Intent
+ 
+		Facebook.Initialize(Facebook.ACTION_VIEW, "fb://profile/100006126339714")
+		StartActivity(Facebook)
+ 
+	Catch
+ 
+		Dim i As Intent
+		i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MgHtetzNaing")
+ 
+		StartActivity(i)
+ 
+	End Try
 End Sub
 Sub Activity_Resume
      
@@ -118,12 +146,64 @@ Sub Activity_Pause (UserClosed As Boolean)
 End Sub
 
 Sub lstOnes_ItemClick (Position As Int, Value As Object)
-     Select Value
-	 	Case 3
-Dim i As Intent
-i.Initialize(i.ACTION_VIEW, "tel:+959776003982")
-StartActivity(i)
+	Select Value
+		Case 1
+			Try
+ 
+				Dim Facebook As Intent
+ 
+				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://profile/100006126339714")
+				StartActivity(Facebook)
+ 
+			Catch
+ 
+				Dim i As Intent
+				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MgHtetzNaing")
+ 
+				StartActivity(i)
+ 
+			End Try
+			Case 2
+			Dim Message As Email
+			Message.To.Add("khunhtetznaing@gmail.com")
+			Message.CC.Add("")
+			StartActivity(Message.GetIntent)
+			
+		Case 3
+			Try
+ 
+				Dim Facebook As Intent
+ 
+				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://page/627699334104477")
+				StartActivity(Facebook)
+ 
+			Catch
+ 
+				Dim i As Intent
+				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MmFreeAndroidApps")
+ 
+				StartActivity(i)
+ 
+			End Try
+			
 	 			Case 4
-				   StartActivity(p.OpenBrowser ("https://www.facebook.com/Khun.Htetz.Naing/"))
-	 End Select
+				   StartActivity(p.OpenBrowser ("http://www.htetznaing.com/"))
+				   
+		Case 5
+			Try
+ 
+				Dim Facebook As Intent
+ 
+				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://page/627699334104477")
+				StartActivity(Facebook)
+ 
+			Catch
+ 
+				Dim i As Intent
+				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MmFreeAndroidApps")
+ 
+				StartActivity(i)
+ 
+			End Try
+	End Select
 End Sub
